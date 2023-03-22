@@ -123,9 +123,9 @@ def run(
                 for c in det[:, 5].unique():
                     n = (det[:, 5] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
-                    print("HHHHHHH", names[0])
+                    print("The image is", names[0])
             else: 
-                print("HHHHHHH: Not padlock")
+                print("The image is: Not padlock")
 
                
 
